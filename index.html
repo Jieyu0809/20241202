@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 抽籤網站</title>
+    <style>
+        /* ... 之前的 CSS 保持不變 ... */
+
+        #authorInfo {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: #666;
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
+
+        #soundControl {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>抽籤系統</h1>
+        
+        <!-- 添加音量控制 -->
+        <div id="soundControl">
+            <label>
+                <input type="checkbox" id="soundToggle" checked>
+                開啟音效
+            </label>
+        </div>
+
+        <div id="inputArea">
+            <input type="text" id="newItem" placeholder="輸入選項">
+            <button onclick="addItem()">添加選項</button>
+        </div>
+
+        <div id="itemList"></div>
+        
+        <button onclick="draw()">抽籤</button>
+        <button onclick="clearAll()">清空所有</button>
+        
+        <div id="result">等待抽籤...</div>
+
+        <!-- 添加作者資訊 -->
+        <div id="authorInfo">413730994 陳佳堉</div>
+    </div>
+
+    <!-- 之前的 JavaScript 代碼保持不變 -->
+    <script>
+        // ... 之前的 JavaScript 代碼 ...
+    </script>
+</body>
+</html>
